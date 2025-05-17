@@ -1,17 +1,22 @@
     public class Pessoa{
-    private String nome, cpf, email, telefone;
+    private String nome, cpf, email, telefone, endereco;
 
     public Pessoa(String nome, String cpf, String email, String telefone){
         this.nome = nome;
         this.cpf = cpf;
         this.email = email;
         this.telefone = telefone;
+        this.endereco = endereco;
     }
 
     public void setNome(String nome){
         this.nome = nome;
     }
-
+    
+    public void setEndereco(String endereco){
+        this.endereco = endereco;
+    }
+    
     public void setCpf(String cpf){
         this.cpf = cpf;
     }
@@ -23,7 +28,11 @@
     public void setTelefone(String telefone){
         this.telefone = telefone;
     }
-
+    
+    public String getEndereco(){
+        return this.endereco;
+    }
+    
     public String getNome(){
         return this.nome;
     }
